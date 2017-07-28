@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DialogueFragment</string>
+    <string name="action_settings">Settings</string>
+    <string name="main_activity">Main Activity</string>
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CustomDialog</string>
+    <string name="action_settings">Settings</string>
+    <string name="custom_dialog">Custom Dialog With Fragment</string>
+</resources>
