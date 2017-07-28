@@ -37,6 +37,7 @@
         android:hint="@string/enter_age"
         android:inputType="textCapWords"
         android:layout_marginBottom="6dp"/>
+    <!-- A container for the buttons -->
     <LinearLayout
         android:id="@+id/btnContainer"
         android:layout_width="match_parent"
@@ -60,8 +61,5 @@
             style="?android:attr/borderlessButtonStyle"/>
 
     </LinearLayout>
-
-
-
 
 </LinearLayout>
