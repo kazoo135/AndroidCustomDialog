@@ -31,7 +31,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public  void showDialog(){
-        DataEntryDialog dialogEntry = new DataEntryDialog();
+        Person p = new Person("Harry", "Potter", 43);
+
+        DataEntryDialog dialogEntry = DataEntryDialog.newInstance(p);
         dialogEntry.show(getSupportFragmentManager(), "DIALOG_DATA");
     }
 
