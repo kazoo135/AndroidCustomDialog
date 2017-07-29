@@ -7,8 +7,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements DataEntryDialog.DataEntryListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,5 +58,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onDataEntryComplete(Person person) {
+        Toast.makeText(MainActivity.this, "You entered " + person.getFirstName() +
+        " " + person.getLastName() + ", " + person.getAge(), Toast.LENGTH_SHORT).show();
     }
 }
