@@ -75,6 +75,7 @@ public class DataEntryDialog extends DialogFragment{
         person.setAge( Integer.valueOf( txtAge.getText().toString()) );
 
         mListener.onDataEntryComplete(person);
+        dismiss();
     }
 
     public interface DataEntryListener{
